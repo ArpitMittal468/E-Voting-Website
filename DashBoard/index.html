@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./../assets/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sytle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap"
+        rel="stylesheet">
+    <title>Vote It Dashboard</title>
+</head>
+
+<body>
+    <div id="headerDiv">
+        <img src="./../assets/inlineLogo.svg" alt="">
+        <div id="newVote" style="visibility: hidden;">
+            <div id="panel">
+                <h3>Question:</h3>
+                <input class="tosty" placeholder="Enter Question Here" required id="newQuestion">
+                <h3>Number of Options:</h3>
+                <input type="range" min="2" max="5" value="2" id="rang" onchange="newTosty()">
+                <h3>Options:</h3>
+                <div id="kuchToh">
+
+                </div>
+            </div>
+        </div>
+        <svg focusable="true" width="24" height="24" viewBox="0 0 24 24" title="Add new Vote" onclick="kuchBillu()">
+            <path d="M20 13h-7v7h-2v-7H4v-2h7V4h2v7h7v2z"></path>
+        </svg>
+    </div>
+    <div id='contentDiv'> </div>
+    <div id='votePanel' style="visibility: hidden;" onclick="closed(event)">
+        <div class="cardContainerBig" onclick="return true">
+            <div id="billu" class="cardsBig"
+                style="background: hsl(90.3233895122784,65.75812251115113%,89.23321935332976%);">
+                <div id="questionBig"> </div>
+            </div>
+            <div class="discpBig">
+                <span id="votesBig"></span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="byBig"></span></span>
+            </div>
+            <div id="voteAns">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

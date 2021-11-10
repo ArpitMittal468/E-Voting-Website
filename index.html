@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote It</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="./assets/logo450px.png" alt="logo" class="logoImg">
+    <div class="loginSection">
+        <input type="text" class="inp" placeholder="Name or Email" id="userName"  autocapitalize="off">
+        <input type="password" class="inp" placeholder="Password" id="passWord"  autocapitalize="off">
+        <div id="statusBar"></div>
+        <p id="alreadyLogin"></p>
+        <button class="bttn" onclick="tryToLogin(this)" id = 'loginBttn'>Login</button>
+        <button class="bttn" onclick="goSignUp(this)" id="signupBttn">Sign Up</button>
+        <p>Vote It &#169; 2021</p>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

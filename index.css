@@ -1,0 +1,146 @@
+html,
+body {
+    min-height: 100vh;
+    /* box-sizing: border-box; */
+}
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    margin: 0%;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 30px; */
+}
+
+.loginSection {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 100px;
+    height: 400px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.logoImg {
+    width: 400px;
+    height: 333px;
+}
+
+@media (max-width:960px) {
+    .logoImg {
+        width: 300px;
+        height: 239px;
+    }
+}
+
+@media (max-width:800px) {
+    .logoImg {
+        margin-top: 50px;
+        width: 200px;
+        height: 160px;
+    }
+
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loginSection {
+        margin-left: 0;
+        margin-top: 50px;
+        height: 350px;
+        margin-bottom: 50px;
+    }
+}
+
+.inp {
+
+    height: 30px;
+    padding: 5px 15px;
+    /* border-radius: 2px; */
+    border: solid 1px rgba(128, 128, 128, 0.445);
+    border-radius: 4px;
+    font-size: medium;
+}
+
+.inp:focus {
+    outline: none;
+    border: solid 1px #7045AF;
+    box-shadow: 0px 0px 1px 2px #6f45af27;
+}
+
+.loginSection #statusBar {
+    border: solid 1px rgba(172, 172, 172, 0.479);
+    height: auto;
+    text-align: center;
+    /* padding: 5px 0px; */
+    border-radius: 5px;
+    color: #ff4040d5;
+    width: 100%;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loggingIn {
+    0% {
+        border-color: rgba(172, 172, 172, 0.479);
+    }
+
+    25% {
+        border-color: rgb(9, 161, 4);
+    }
+
+    75% {
+        border-color: rgb(5, 156, 0);
+    }
+
+    100% {
+        border-color: rgba(172, 172, 172, 0.479);
+    }
+}
+
+@keyframes wrongLogin {
+    0% {
+        border-color: rgb(233, 5, 5);
+    }
+
+}
+
+.bttn {
+    height: 40px;
+    border: solid 1px rgba(128, 128, 128, 0.404);
+    border-radius: 4px;
+    color: white;
+    background-color: #7851b3;
+    font-size: medium;
+}
+
+.bttn:hover {
+    cursor: pointer;
+    background-color: #5f3c92;
+}
+
+p {
+    color: rgb(175, 175, 175);
+    font-size: smaller;
+    text-align: center;
+    margin: 0%;
+}
+
+#alreadyLogin a {
+    color: #7045AF;
+    cursor: pointer;
+}
+#alreadyLogin a:visited {
+    color: #7045AF;
+}
