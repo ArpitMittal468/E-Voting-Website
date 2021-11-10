@@ -1,5 +1,5 @@
 function goToDash(name) {
-    window.location.href = window.location.origin + '/DashBoard/index.html?name='+name;
+    window.location.href = window.location.href + '/DashBoard/index.html?name='+name;
     // console.log(window.location)
 }
 
@@ -12,5 +12,5 @@ function tryToLogin(e){
 }
 
 function goSignUp() {
-    window.location.href = window.location.origin + '/signUp';
+    window.location.href = window.location.href + '/signUp';
 }
